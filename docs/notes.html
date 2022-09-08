@@ -36,30 +36,69 @@
   <section id="ubersicht-der-speziellen-methoden-in-python">
 <h1>Übersicht der speziellen Methoden in Python<a class="headerlink" href="#ubersicht-der-speziellen-methoden-in-python" title="Permalink to this heading">¶</a></h1>
 <table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head"><p>Method names and related operators</p></th>
+</tr>
+</thead>
 <tbody>
-<tr class="row-odd"><td><p>Category</p></td>
-<td><p>Method names and related operators</p></td>
+<tr class="row-even"><td><p>String/bytes representation</p></td>
+<td><p>__repr__ , __str__ , __format__ , __bytes__</p></td>
+</tr>
+<tr class="row-odd"><td><p>Conversion to number</p></td>
+<td><p>__abs__ , __bool__ , __complex__ , __int__ , __float__ , __hash__ , __index__</p></td>
+</tr>
+<tr class="row-even"><td><p>Emulating collections</p></td>
+<td><p>__len__ , __getitem__ , __setitem__ , __delitem__ , __contains__</p></td>
+</tr>
+<tr class="row-odd"><td><p>Iteration</p></td>
+<td><p>__iter__ , __reversed__ , __next__</p></td>
+</tr>
+<tr class="row-even"><td><p>Emulating callables</p></td>
+<td><p>__call__</p></td>
+</tr>
+<tr class="row-odd"><td><p>Context management</p></td>
+<td><p>__enter__ , __exit__</p></td>
+</tr>
+<tr class="row-even"><td><p>Instance creation and destruction</p></td>
+<td><p>__new__ , __init__ , __del__</p></td>
+</tr>
+<tr class="row-odd"><td><p>Attribute management</p></td>
+<td><p>__get__ __getattr__ , __getattribute__ , __setattr__ , __delattr__ , __dir__</p></td>
+</tr>
+<tr class="row-even"><td><p>Attribute descriptors</p></td>
+<td><p>__get__ , __set__ , __delete__</p></td>
+</tr>
+<tr class="row-odd"><td><p>Class services</p></td>
+<td><p>__prepare__ , __instancecheck__ , __subclasscheck__</p></td>
+</tr>
+<tr class="row-even"><td><p>Unary numeric operators</p></td>
+<td><p>__neg__ - , __pos__ +, __abs__ abs()</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rich comparison operators</p></td>
+<td><p>__lt__ &gt;, __le__ &lt;=, __eq__ ==, __ne__ !=, __gt__ &gt;, __ge__ &gt;=</p></td>
+</tr>
+<tr class="row-even"><td><p>Arithmetic operators</p></td>
+<td><p>__add__ +, __sub__ - , __mul__ <em>, __truediv__ /, __floordiv__ //, __mod__%, __divmod__ divmod() , __pow__ *</em> or pow() , __round__ round()</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reversed arithmetic operators</p></td>
+<td><p>__radd__ , __rsub__ , __rmul__ , __rtruediv__ , __rfloordiv__ , __rmod__ , __rdivmod__ , __rpow__</p></td>
+</tr>
+<tr class="row-even"><td><p>Augmented assignment arithmetic operators</p></td>
+<td><p>__iadd__ , __isub__ , __imul__ , __itruediv__ , __ifloordiv__ , __imod__ ,__ipow__</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bitwise operators</p></td>
+<td><p>__invert__ ~, __lshift__ &lt;&lt;, __rshift__ &gt;&gt;, __and__ &amp;, __or__ |, __xor__ ^</p></td>
+</tr>
+<tr class="row-even"><td><p>Reversed bitwise operators</p></td>
+<td><p>__rlshift__ , __rrshift__ , __rand__ , __rxor__ , __ror__</p></td>
+</tr>
+<tr class="row-odd"><td><p>Augmented assignment bitwise operators</p></td>
+<td><p>__ilshift__ , __irshift__ , __iand__ , __ixor__ , __ior__</p></td>
 </tr>
 </tbody>
 </table>
-<p>String/bytes representation                  __repr__ , __str__ , __format__ , __bytes__
-Conversion to number                         __abs__ , __bool__ , __complex__ , __int__ , __float__ , __hash__ , __index__
-Emulating collections                        __len__ , __getitem__ , __setitem__ , __delitem__ , __contains__
-Iteration                                    __iter__ , __reversed__ , __next__</p>
-<p>Emulating callables                          __call__</p>
-<p>Context management                           __enter__ , __exit__</p>
-<p>Instance creation and destruction            __new__ , __init__ , __del__</p>
-<p>Attribute management                         __get__ __getattr__ , __getattribute__ , __setattr__ , __delattr__ , __dir__</p>
-<p>Attribute descriptors                        __get__ , __set__ , __delete__</p>
-<p>Class services                               __prepare__ , __instancecheck__ , __subclasscheck__</p>
-<p>Unary numeric operators                      __neg__ - , __pos__ +, __abs__ abs()</p>
-<p>Rich comparison operators                    __lt__ &gt;, __le__ &lt;=, __eq__ ==, __ne__ !=, __gt__ &gt;, __ge__ &gt;=</p>
-<p>Arithmetic operators                         __add__ +, __sub__ - , __mul__ <em>, __truediv__ /, __floordiv__ //, __mod__%, __divmod__ divmod() , __pow__ *</em> or pow() , __round__ round()</p>
-<p>Reversed arithmetic operators                __radd__ , __rsub__ , __rmul__ , __rtruediv__ , __rfloordiv__ , __rmod__ , __rdivmod__ , __rpow__</p>
-<p>Augmented assignment arithmetic operators    __iadd__ , __isub__ , __imul__ , __itruediv__ , __ifloordiv__ , __imod__ ,__ipow__</p>
-<p>Bitwise operators                            __invert__ ~, __lshift__ &lt;&lt;, __rshift__ &gt;&gt;, __and__ &amp;, __or__ <a href="#id1"><span class="problematic" id="id2">|</span></a>, __xor__ ^</p>
-<p>Reversed bitwise operators                   __rlshift__ , __rrshift__ , __rand__ , __rxor__ , __ror__</p>
-<p>Augmented assignment bitwise operators       __ilshift__ , __irshift__ , __iand__ , __ixor__ , __ior__</p>
+<p><em>Fluent Python [2015], S.13</em></p>
 </section>
 
 
