@@ -1,11 +1,12 @@
 # arjan codes
 # https://www.youtube.com/shorts/psu7LYIyQAo
+
 # anstelle von if then else besser dict verwenden. 
 # bsp.
 
 def should_buy(prices: list[int], strategy: str) -> str:
     if strategy == "avg":
-        return should_buy_av(prices)
+        return should_buy_avg(prices)
     elif strategy == "minmax":
         return should_buy_minmax(prices)
     elif strategy == "price_drop":
